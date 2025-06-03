@@ -1,9 +1,41 @@
-[gd_scene format=3 uid="uid://htcjmt11tfv2"]
+[gd_scene load_steps=3 format=3 uid="uid://htcjmt11tfv2"]
 
-[node name="Control" type="Control"]
+[ext_resource type="Script" uid="uid://drfmvm5vl7lyc" path="res://dialogue.gd" id="1_4xg4g"]
+[ext_resource type="Texture2D" uid="uid://bfkej38ugsubq" path="res://DemoUiBackgroundNineRect.png" id="2_qtnsr"]
+
+[node name="Dialogue" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4xg4g")
+
+[node name="Background" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 600.0
+offset_bottom = 153.0
+texture = ExtResource("2_qtnsr")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Content" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 18.0
+offset_right = 582.0
+offset_bottom = 135.0
+bbcode_enabled = true
+text = "[color=black][wave amplitude=5]This is a text box with dialogue and {PLAYER}'s name in it![/wave]
+[wave amplitude=5]This is a text box with dialogue and {PLAYER}'s name in it![/wave]
+[wave amplitude=5]This is a text box with dialogue and {PLAYER}'s name in it![/wave][/color]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TypeTimer" type="Timer" parent="."]
+wait_time = 0.05
+
+[connection signal="timeout" from="TypeTimer" to="." method="_on_type_timer_timeout"]
