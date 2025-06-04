@@ -4,81 +4,87 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-1" target="4emAietvxQ-0Gn-mjmHh-3">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="4emAietvxQ-0Gn-mjmHh-1" target="4emAietvxQ-0Gn-mjmHh-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-1" value="update_message(message)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;take a message argument and update the richtext content.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-1" value="update_message(message)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;take a message argument and update the richtext content.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-360" y="40" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-3" target="4emAietvxQ-0Gn-mjmHh-17">
+        <mxCell id="FSNd0Ji4REoDersDFRHS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-3" target="FSNd0Ji4REoDersDFRHS-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-3" value="check_placeholders(message)&lt;div&gt;&lt;br&gt;&lt;div&gt;use regex to check for placeholders&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-3" value="placeholder_splitter(message)&lt;div&gt;&lt;br&gt;&lt;div&gt;use regex to check for placeholders and split at each regex match.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-375" y="130" width="200" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-14" target="4emAietvxQ-0Gn-mjmHh-16">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="4emAietvxQ-0Gn-mjmHh-14" target="4emAietvxQ-0Gn-mjmHh-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-14" value="replace_placeholders(message, replacement_dict)&lt;div&gt;&lt;br&gt;&lt;div&gt;check placeholders against dictionary containing replacement values&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-140" y="245" width="310" height="92" as="geometry" />
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-14" value="replace_placeholders(message, replacement_dict)&lt;div&gt;&lt;br&gt;&lt;div&gt;check placeholders against dictionary containing replacement values&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="145" y="260" width="310" height="92" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-16" target="4emAietvxQ-0Gn-mjmHh-41">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4emAietvxQ-0Gn-mjmHh-16" target="4emAietvxQ-0Gn-mjmHh-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-48" value="No?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4emAietvxQ-0Gn-mjmHh-47">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-48" value="No?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4emAietvxQ-0Gn-mjmHh-47" vertex="1" connectable="0">
           <mxGeometry x="-0.5349" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-16" target="4emAietvxQ-0Gn-mjmHh-46">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="4emAietvxQ-0Gn-mjmHh-16" target="4emAietvxQ-0Gn-mjmHh-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-50" value="Yes?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4emAietvxQ-0Gn-mjmHh-49">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-50" value="Yes?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4emAietvxQ-0Gn-mjmHh-49" vertex="1" connectable="0">
           <mxGeometry x="-0.03" y="1" relative="1" as="geometry">
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-16" value="Are there any matches?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-45" y="375" width="120" height="60" as="geometry" />
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-16" value="Are there any matches?" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="390" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-17" target="4emAietvxQ-0Gn-mjmHh-14">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4emAietvxQ-0Gn-mjmHh-17" target="4emAietvxQ-0Gn-mjmHh-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-35" value="Yes?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4emAietvxQ-0Gn-mjmHh-33">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-35" value="Yes?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4emAietvxQ-0Gn-mjmHh-33" vertex="1" connectable="0">
           <mxGeometry x="-0.0879" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-17" target="4emAietvxQ-0Gn-mjmHh-41">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4emAietvxQ-0Gn-mjmHh-17" target="4emAietvxQ-0Gn-mjmHh-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-44" value="No?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4emAietvxQ-0Gn-mjmHh-42">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-44" value="No?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4emAietvxQ-0Gn-mjmHh-42" vertex="1" connectable="0">
           <mxGeometry x="-0.8341" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-17" value="Are there any placeholders?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-335" y="260" width="120" height="60" as="geometry" />
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-17" value="Does the current element match a placeholder" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="275" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-39" target="4emAietvxQ-0Gn-mjmHh-1">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4emAietvxQ-0Gn-mjmHh-39" target="4emAietvxQ-0Gn-mjmHh-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-39" value="on_input_pressed()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-39" value="on_input_pressed()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-335" y="-50" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-41" value="Update RichTextLabel" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-175" y="600" width="140" height="60" as="geometry" />
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-41" value="Update RichTextLabel" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="615" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-46" target="4emAietvxQ-0Gn-mjmHh-14">
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="1" source="4emAietvxQ-0Gn-mjmHh-46" target="4emAietvxQ-0Gn-mjmHh-14" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="200" y="510" />
-              <mxPoint x="200" y="291" />
+              <mxPoint x="485" y="525" />
+              <mxPoint x="485" y="306" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="4emAietvxQ-0Gn-mjmHh-46" value="Update &#39;message&#39; with the replaced text" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="480" width="120" height="60" as="geometry" />
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-46" value="Update &#39;message&#39; with the replaced text" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="325" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FSNd0Ji4REoDersDFRHS-1" value="Take &#39;message&#39; and split at each placeholder&amp;nbsp;using a regex&lt;div&gt;&lt;br&gt;&lt;div&gt;push each split to message_array[]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;iterate through array, run a replacer() function that uses a match statement to check each element against a list of replacements&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;if i match is found, change the element in message_array[]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;repeat for all elements&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;once complete, concat all elements in message_array[] and update richtextlabel.&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="-20" width="390" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="FSNd0Ji4REoDersDFRHS-2" value="Push each split to message_array[]" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-375" y="260" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
