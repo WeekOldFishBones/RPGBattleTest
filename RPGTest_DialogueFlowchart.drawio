@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.3">
+  <diagram name="Page-1" id="1pf5mY9I2DuNeg727tpX">
+    <mxGraphModel dx="2276" dy="1843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-1" target="4emAietvxQ-0Gn-mjmHh-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-1" value="update_message(message)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;take a message argument and update the richtext content.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="40" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-3" target="4emAietvxQ-0Gn-mjmHh-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-3" value="check_placeholders(message)&lt;div&gt;&lt;br&gt;&lt;div&gt;use regex to check for placeholders&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-375" y="130" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-14" target="4emAietvxQ-0Gn-mjmHh-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-14" value="replace_placeholders(message, replacement_dict)&lt;div&gt;&lt;br&gt;&lt;div&gt;check placeholders against dictionary containing replacement values&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="245" width="310" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-16" target="4emAietvxQ-0Gn-mjmHh-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-48" value="No?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4emAietvxQ-0Gn-mjmHh-47">
+          <mxGeometry x="-0.5349" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-16" target="4emAietvxQ-0Gn-mjmHh-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-50" value="Yes?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4emAietvxQ-0Gn-mjmHh-49">
+          <mxGeometry x="-0.03" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-16" value="Are there any matches?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-45" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-17" target="4emAietvxQ-0Gn-mjmHh-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-35" value="Yes?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4emAietvxQ-0Gn-mjmHh-33">
+          <mxGeometry x="-0.0879" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-17" target="4emAietvxQ-0Gn-mjmHh-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-44" value="No?" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4emAietvxQ-0Gn-mjmHh-42">
+          <mxGeometry x="-0.8341" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-17" value="Are there any placeholders?" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-335" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-39" target="4emAietvxQ-0Gn-mjmHh-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-39" value="on_input_pressed()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-335" y="-50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-41" value="Update RichTextLabel" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-175" y="600" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="4emAietvxQ-0Gn-mjmHh-46" target="4emAietvxQ-0Gn-mjmHh-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="510" />
+              <mxPoint x="200" y="291" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4emAietvxQ-0Gn-mjmHh-46" value="Update &#39;message&#39; with the replaced text" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
